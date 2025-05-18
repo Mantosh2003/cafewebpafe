@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odisha Cuisine Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f0e1;
+      color: #3b2f2f;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: url('https://assets.cntraveller.in/photos/65a4ca16f4f38543f111ce6d/4:3/w_4608,h_3456,c_limit/1444924249') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    .menu-section {
+      padding: 2em;
+      background-color: #fff3e0;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      color: #5d4037;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .menu-grid .item {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-grid .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-grid .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .menu-grid .item p {
+      padding: 0.5em;
+      margin: 0;
+    }
+
+    #owner {
+      padding: 2em;
+      background: url('https://s7ap1.scene7.com/is/image/incredibleindia/deomali-koraput-odisha?qlt=82&ts=1726663772962') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    #owner h2 {
+      color: #ffeb3b;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 1em;
+      margin: 2em;
+      border-radius: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button[type="submit"] {
+      background-color: #5d4037;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #8d6e63;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: #5d4037;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="EK.png" alt="ECHOES OF KALINGA">
+    <h1>ODISHA CUISINE CAFE</h1>
+    <p>Authentic Odia Cuisine Inspired by Odisha Tourism</p>
+  </header>
+
+  <section id="veg" class="menu-section">
+    <h2>Vegetarian Delights</h2>
+    <div class="menu-grid">
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYS-2fi4JdZdtgFz__hS-tNwxQX74b3BHa3Q&s" alt="Dalma"><p>Dalma</p></div>
+      <div class="item"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/bobly-rath20180826080916776.jpeg" alt="Ghanta Tarkari"><p>Ghanta Tarkari</p></div>
+      <div class="item"><img src="https://ommcomnews.com/wp-content/uploads/2024/03/Dahibara.jpg" alt="Dahi Bara"><p>Dahi Bara</p></div>
+      <div class="item"><img src="https://www.culturebook.in/wp-content/uploads/2024/10/Pakhala-Bhata.jpg" alt="Pakhala Bhata"><p>Pakhala Bhata</p></div>
+      <div class="item"><img src="https://odiafoods.in/wp-content/uploads/2020/10/FB_IMG_1601554130075.jpg" alt="Santula"><p>Santula</p></div>
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4AZ36ZgNtp_6g_Dl6LoPv92K7SjAFWQJGw&s" alt="Saga Bhaja"><p>Saga Bhaja</p></div>
+      <div class="item"><img src="https://img-global.cpcdn.com/recipes/b534767540076856/680x482cq70/mahura-recipe-main-photo.jpg" alt="Mahura"><p>Mahura</p></div>
+    </div>
+  </section>
+
+  <section id="nonveg" class="menu-section">
+    <h2>Non-Vegetarian Specials</h2>
+    <div class="menu-grid">
+      <div class="item"><img src="https://diabetesindia.com/diabetes-causes-preventions/recipes/images/o_chingudi_tarkari.jpg" alt="Chingudi Tarkari"><p>Chingudi Tarkari</p></div>
+      <div class="item"><img src="https://images.squarespace-cdn.com/content/v1/578753d7d482e9c3a909de40/1686566852840-YDF0IBYLOPN6IUNSG1RN/Maacha+besara.jpg?format=2500w" alt="Macha Besara"><p>Macha Besara</p></div>
+      <div class="item"><img src="https://i0.wp.com/www.traveldiaryparnashree.com/wp-content/uploads/2020/08/Mudhi-Mansa-scaled.jpg?ssl=1" alt="Mudhi Mansa"><p>Mudhi Mansa</p></div>
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_0rSQvELPNvDgg_rgftJKXvkYuDqJc2s6Q&s" alt="Ghee Mutton"><p>Ghee Mutton</p></div>
+      <div class="item"><img src="https://www.whiskaffair.com/wp-content/uploads/2021/06/Desi-Chicken-Curry-2-3.jpg" alt="Desi Chicken"><p>Desi Chicken</p></div>
+    </div>
+  </section>
+
+  <section id="sweets" class="menu-section">
+    <h2>Traditional Sweets</h2>
+    <div class="menu-grid">
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxYuqVYQih-71xA0OC2i2aobeccI3pViFUA&s" alt="Nayagadia Chenna Poda"><p>Nayagadia Chenna Poda</p></div>
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2T2AgUcOchdJ878nUfRsLzyu5I1gKPOBhyA&s" alt="Rasagola"><p>Rasagola</p></div>
+      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhIDc-ATcQI-bm-3XNJ0zykdgjBPv0W3mpg&s" alt="Enduri Pitha"><p>Enduri Pitha</p></div>
+      <div class="item"><img src="https://images.deccanherald.com/deccanherald/2023-10/40bade5c-8e11-4526-a0a4-5d2d4936f23b/Clipboard___2023_10_04T160608_422.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Rasabali"><p>Rasabali</p></div>
+      <div class="item"><img src="https://m.media-amazon.com/images/I/61oc28TrzeL.jpg" alt="Kora Khai"><p>Kora Khai</p></div>
+      <div class="item"><img src="https://cdn.dotpe.in/longtail/store-items/5523029/5Pl3iMzP.jpeg" alt="Puri Khaja"><p>Puri Khaja</p></div>
+    </div>
+  </section>
+
+  <section id="order" class="order-section">
+    <h2>Place Your Order</h2>
+    <form action="mailto:digdarsakpanda@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <input type="number" name="phone" placeholder="Phone Number" required><br>
+      <select name="item" required>
+        <option value="">Select Dish</option>
+        <option>Dalma</option>
+        <option>Ghanta Tarkari</option>
+        <option>Dahi Bara</option>
+        <option>Pakhala Bhata</option>
+        <option>Santula</option>
+        <option>Saga Bhaja</option>
+        <option>Mahura</option>
+        <option>Chingudi Tarkari</option>
+        <option>Macha Besara</option>
+        <option>Mudhi Mansa</option>
+        <option>Ghee Mutton</option>
+        <option>Desi Chicken</option>
+        <option>Nayagadia Chenna Poda</option>
+        <option>Rasagola</option>
+        <option>Enduri Pitha</option>
+        <option>Rasabali</option>
+        <option>Kora Khai</option>
+        <option>Puri Khaja</option>
+      </select><br>
+      <textarea name="message" rows="4" placeholder="Special Requests (optional)"></textarea><br>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="owner" class="owner-info">
+    <h2>About Us</h2>
+    <h2>Owner Information</h2>
+    <p><strong>Name:</strong> <b>  MANTOSH ,DIGDARSAK, SATYAM</b></p>
+    <p><strong>Email:</strong> ECHOESOFKALINGA1@GMAIL.COM</p>
+    <p><strong>Phone:</strong> +91 7205412139</p>
+    <p><i>Cultural Trails Cafe brings the divine taste of Odisha right to your plate. We celebrate the cuisine of the Jagannath Temple and the soul of Odia heritage through every dish served here.</i></p>
+    <p>DESIGNED BY:  MANTOSH,DIGDARSAK</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ECHOES OF KALINGA | Made with ❤ in Odisha
+  </footer>
+
+</body>
+
+</html>
